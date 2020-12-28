@@ -3,7 +3,7 @@ jdk : openjdk11
 install: gradle wrapper --gradle-version 5.1
 script:
   - gradle assemble
-  - gradle check --scan --info
+  - gradle check --scan
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
   - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
