@@ -1,7 +1,10 @@
 package BTCN_02;
 
 public class mainClass {
-	public static String checkTriangle(float a,float b,float c) {
+	public static String checkTriangle(Triangle t) {
+		float a = t.Distance2Point(t.p1, t.p2);
+		float b = t.Distance2Point(t.p1, t.p3);
+		float c = t.Distance2Point(t.p2, t.p3)
 		String sMessage = "";
 		if (a >= b+c || b >= a+c || c>=a+b ) {
 			sMessage = "Không phải tam giác";
