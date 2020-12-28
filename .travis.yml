@@ -1,6 +1,6 @@
 language : java
 jdk : openjdk11
-install: gradle wrapper --gradle-version 4.2
+install: gradle wrapper --gradle-version 5.1.1
 script:
   - gradle assemble
   - gradle check --scan --info
