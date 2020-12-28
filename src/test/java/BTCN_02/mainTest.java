@@ -14,7 +14,7 @@ public class mainTest {
 	@Test
     public void test02() {
         String rs = mainClass.checkTriangle(2, 3, 4);
-        String expected = "Tam giác tù";
+        String expected = "Tam giác nhọn";
         assertEquals(rs, expected);
 	}	@Test
     public void test03() {
